@@ -6,6 +6,57 @@ Template educacional do Campus Movidos Por IA. Plataforma mínima, completa e fu
 
 ---
 
+## Pré-requisitos
+
+Antes de começar você precisa de:
+
+| O quê | Pra quê | Onde baixar |
+|---|---|---|
+| **Node.js 18+** | Roda o servidor (Next.js) e o instalador de bibliotecas (`npm`) | https://nodejs.org/ (clique no botão **LTS**) |
+| **Git** | Clonar o repositório | macOS já vem instalado · Windows: https://git-scm.com/ |
+| **Editor de código** | Editar arquivos do projeto | VS Code, Cursor, Zed etc — qualquer um serve |
+| **Conta Supabase** (grátis) | Banco de dados + auth | https://supabase.com |
+| **Gmail App Password** | Enviar códigos de login (OTP) | https://myaccount.google.com/apppasswords |
+
+**Importante:** Node.js e Git são instaladores **clicáveis** (sem terminal). Demoram ~5 minutos no total.
+
+---
+
+## Como começar — dois caminhos
+
+### Caminho A — Você já programa
+Pule pro [Setup local](#setup-local) abaixo e siga os passos.
+
+### Caminho B — Você é iniciante (recomendamos usar IA assistente)
+
+**Por que IA assistente?** Pra rodar este template, você vai modificar arquivos, configurar variáveis de ambiente e rodar comandos no terminal. Um assistente de IA te guia em cada passo, explica erros e edita os arquivos pra você.
+
+**Opções de IA assistente:**
+
+| Ferramenta | Como instalar | Vantagem |
+|---|---|---|
+| **Cursor** (recomendado pra iniciantes) | Baixa em https://cursor.com — instala como app comum (.dmg/.exe) | **Não precisa de Node.js antes** — Claude já vem embutido. Mais simples pra quem está começando. |
+| **Claude Code** (extensão VS Code) | Após instalar Node.js: `npm install -g @anthropic-ai/claude-code` + extensão no marketplace | Mais leve se você já tem VS Code configurado |
+| **GitHub Codespaces** | Botão "Code → Codespaces" no GitHub | Roda tudo na nuvem, zero instalação local (60h grátis/mês) |
+
+**Após abrir o projeto no Cursor (ou outro):**
+
+1. Abra a pasta do projeto no editor
+2. Abra o chat do Claude/Cursor
+3. Cole esse prompt:
+
+```
+Sou aluno do Movidos Por IA e clonei este template. Me guie pelo setup
+completo do README — instale Node.js e Git se eu não tiver, me ajude
+a criar a conta Supabase, configurar o .env.local, rodar a migration
+e subir o servidor local. Explica cada passo em linguagem simples
+e me avisa quando eu precisar fazer algo no navegador.
+```
+
+Pronto — a IA assume daqui. Você só responde "sim" quando ela pedir permissão e cola as chaves do Supabase quando ela perguntar.
+
+---
+
 ## O que tem dentro
 
 - **Landing pública** (`/landing`) — captura de leads (`/optin`)
