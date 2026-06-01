@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <title>O que é um Agente de IA — e por que isso importa para o seu atendimento agora</title>
+  <!--[if !mso]><!-->
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!--<![endif]-->
+  <style>
+    /* === RESET === */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; height: 100% !important; }
+
+    /* === LIGHT MODE (default) === */
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
+    body {
+      background-color: #ebebeb !important;
+      color: #1a1a1a !important;
+    }
+    .email-wrapper {
+      background-color: #ebebeb;
+    }
+    .email-body {
+      background-color: #ffffff;
+    }
+    .header-bar {
+      background: linear-gradient(135deg, #2d2d8f 0%, #137dc5 55%, #00aeef 100%);
+    }
+    .section-heading {
+      color: #2d2d8f;
+      font-family: 'Alata', Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.3;
+      margin: 0 0 16px 0;
+    }
+    .body-text {
+      color: #333333;
+      font-family: 'Roboto Slab', Georgia, 'Times New Roman', serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.7;
+      margin: 0 0 16px 0;
+    }
+    .text-muted {
+      color: #666666;
+      font-family: 'Roboto Slab', Georgia, 'Times New Roman', serif;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .stat-value {
+      color: #137dc5;
+      font-family: 'Alata', Arial, Helvetica, sans-serif;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 1.1;
+    }
+    .stat-label {
+      color: #333333;
+      font-family: 'Roboto Slab', Georgia, serif;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    .stat-source {
+      color: #999999;
+      font-family: 'Roboto Slab', Georgia, serif;
+      font-size: 11px;
+      font-style: italic;
+    }
+    .cta-button {
+      background: linear-gradient(135deg, #2d2d8f 0%, #137dc5 55%, #00aeef 100%);
+      border-radius: 6px;
+      color: #ffffff !important;
+      display: inline-block;
+      font-family: 'Alata', Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1;
+      padding: 14px 32px;
+      text-align: center;
+      text-decoration: none;
+    }
+    .link-brand {
+      color: #137dc5;
+      text-decoration: underline;
+    }
+    .divider {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 28px 0;
+    }
+    .section-card {
+      background-color: #f8f9fa;
+      border-left: 4px solid #137dc5;
+      border-radius: 0 6px 6px 0;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    .highlight-box {
+      background-color: #f0f7ff;
+      border-radius: 8px;
+      padding: 24px;
+      margin: 20px 0;
+      text-align: center;
+    }
+    .footer-text {
+      color: #999999;
+      font-family: 'Roboto Slab', Georgia, serif;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    .preheader {
+      display: none !important;
+      visibility: hidden;
+      mso-hide: all;
+      font-size: 1px;
+      line-height: 1px;
+      max-height: 0;
+      max-width: 0;
+      opacity: 0;
+      overflow: hidden;
+    }
+
+    /* === DARK MODE === */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #0a0d1a !important;
+        color: #e0e0e0 !important;
+      }
+      .email-wrapper {
+        background-color: #0a0d1a !important;
+      }
+      .email-body {
+        background-color: #0f1424 !important;
+      }
+      .section-heading {
+        color: #00aeef !important;
+      }
+      .body-text {
+        color: #d0d0d0 !important;
+      }
+      .text-muted {
+        color: #999999 !important;
+      }
+      .stat-value {
+        color: #00aeef !important;
+      }
+      .stat-label {
+        color: #d0d0d0 !important;
+      }
+      .stat-source {
+        color: #777777 !important;
+      }
+      .section-card {
+        background-color: #161b2e !important;
+        border-left-color: #00aeef !important;
+      }
+      .highlight-box {
+        background-color: rgba(45, 45, 143, 0.2) !important;
+      }
+      .divider {
+        border-top-color: rgba(45, 45, 143, 0.35) !important;
+      }
+      .link-brand {
+        color: #00aeef !important;
+      }
+      .footer-text {
+        color: #666666 !important;
+      }
+    }
+
+    /* === RESPONSIVE === */
+    @media only screen and (max-width: 600px) {
+      .email-body {
+        width: 100% !important;
+        padding: 16px !important;
+      }
+      .section-heading {
+        font-size: 20px !important;
+      }
+      .body-text {
+        font-size: 14px !important;
+      }
+      .stat-value {
+        font-size: 28px !important;
+      }
+      .stats-table td {
+        display: block !important;
+        width: 100% !important;
+        padding-bottom: 20px !important;
+      }
+    }
+  </style>
+</head>
+<body style="margin: 0; padding: 0;">
+  <!-- Preheader -->
+  <div class="preheader">90% dos clientes esperam resposta imediata. Seu time consegue atender às 23h de uma terça? Um agente de IA consegue.&#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;</div>
+
+  <!-- Email Wrapper -->
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="email-wrapper" style="background-color: #ebebeb;">
+    <tr>
+      <td align="center" style="padding: 24px 16px;">
+
+        <!-- Email Container -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" class="email-body" style="background-color: #ffffff; border-radius: 12px; overflow: hidden; max-width: 600px;">
+
+          <!-- Header: Logo on dark background -->
+          <tr>
+            <td style="background-color: #0a0d1a; padding: 36px 40px 12px 40px; text-align: center;">
+              
+              <img src="data:image/png;base64,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" alt="Movidos Por IA" width="240" style="width: 240px; max-width: 80%; height: auto; display: block; margin: 0 auto;">
+              
+            </td>
+          </tr>
+          <!-- Edition info bar on dark -->
+          <tr>
+            <td style="background-color: #0a0d1a; padding: 0 40px 24px 40px; text-align: center;">
+              <span style="font-family: 'Roboto Slab', Georgia, serif; font-size: 12px; color: rgba(255,255,255,0.45); letter-spacing: 1px;">Edi&ccedil;&atilde;o #1 &bull; 30 de Março, 2026</span>
+            </td>
+          </tr>
+          <!-- Gradient accent line -->
+          <tr>
+            <td style="background: linear-gradient(135deg, #2d2d8f 0%, #137dc5 55%, #00aeef 100%); height: 4px; font-size: 0; line-height: 0;">&nbsp;</td>
+          </tr>
+
+          <!-- Title -->
+          <tr>
+            <td style="padding: 36px 40px 0 40px;">
+              <h1 style="font-family: 'Alata', Arial, Helvetica, sans-serif; font-size: 26px; font-weight: 400; color: #2d2d8f; line-height: 1.3; margin: 0; text-align: center;">O que é um Agente de IA — e por que isso importa para o seu atendimento agora</h1>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding: 20px 40px 0 40px;">
+              <hr class="divider" style="border: none; border-top: 1px solid #e0e0e0; margin: 0;">
+            </td>
+          </tr>
+
+          <!-- Dynamic Sections -->
+          
+
+          
+          <!-- Intro Section -->
+          <tr>
+            <td style="padding: 28px 40px 0 40px;">
+              
+              <p class="body-text" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 15px; color: #333333; line-height: 1.7; margin: 0;">São 23h de uma terça-feira. Um cliente entra no seu site, tem uma dúvida sobre o produto e quer comprar agora. Ele manda uma mensagem. Ninguém responde.<br><br>Na manhã seguinte, quando sua equipe abre o computador, esse cliente já comprou do concorrente.<br><br>Isso não é exagero — é o que os números mostram. E nesta primeira edição da newsletter da Movidos Por IA, vou te mostrar por que o atendimento é o primeiro lugar onde um agente de IA transforma resultados.</p>
+            </td>
+          </tr>
+
+          
+
+          
+
+          
+          <!-- Stats Block -->
+          <tr>
+            <td style="padding: 28px 40px 0 40px;">
+              <h2 class="section-heading" style="font-family: 'Alata', Arial, Helvetica, sans-serif; font-size: 22px; font-weight: 400; color: #2d2d8f; line-height: 1.3; margin: 0 0 20px 0;">O que seus clientes esperam (e você provavelmente não entrega)</h2>
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="stats-table">
+                <tr>
+                  
+                  <td align="center" valign="top" style="width: 50%; padding: 0 8px;">
+                    <div class="highlight-box" style="background-color: #f0f7ff; border-radius: 8px; padding: 24px 16px;">
+                      <p class="stat-value" style="font-family: 'Alata', Arial, Helvetica, sans-serif; font-size: 36px; color: #137dc5; line-height: 1.1; margin: 0 0 8px 0;">90%</p>
+                      <p class="stat-label" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 14px; color: #333333; line-height: 1.4; margin: 0 0 8px 0;">dos clientes consideram resposta imediata como crítico ao entrar em contato com uma empresa</p>
+                      <p class="stat-source" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 11px; color: #999999; font-style: italic; margin: 0;">HubSpot, 2025</p>
+                    </div>
+                  </td>
+                  
+                  <td align="center" valign="top" style="width: 50%; padding: 0 8px;">
+                    <div class="highlight-box" style="background-color: #f0f7ff; border-radius: 8px; padding: 24px 16px;">
+                      <p class="stat-value" style="font-family: 'Alata', Arial, Helvetica, sans-serif; font-size: 36px; color: #137dc5; line-height: 1.1; margin: 0 0 8px 0;">60%</p>
+                      <p class="stat-label" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 14px; color: #333333; line-height: 1.4; margin: 0 0 8px 0;">definem “imediato” como menos de 10 minutos</p>
+                      <p class="stat-source" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 11px; color: #999999; font-style: italic; margin: 0;">HubSpot, 2025</p>
+                    </div>
+                  </td>
+                  
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          
+
+          
+
+          
+          <!-- Educational Block -->
+          <tr>
+            <td style="padding: 28px 40px 0 40px;">
+              <h2 class="section-heading" style="font-family: 'Alata', Arial, Helvetica, sans-serif; font-size: 22px; font-weight: 400; color: #2d2d8f; line-height: 1.3; margin: 0 0 16px 0;">O problema real: seu cliente vai embora em silêncio</h2>
+              <p class="body-text" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 15px; color: #333333; line-height: 1.7; margin: 0 0 16px 0;">A maioria das empresas pensa que perde clientes por preço ou produto. Mas os dados contam outra história:</p>
+              
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                
+                <tr>
+                  <td style="padding: 12px 0;">
+                    <div class="section-card" style="background-color: #f8f9fa; border-left: 4px solid #2d2d8f; border-radius: 0 6px 6px 0; padding: 16px 20px;">
+                      <p style="font-family: 'Alata', Arial, Helvetica, sans-serif; font-size: 16px; color: #2d2d8f; margin: 0 0 6px 0;">86% abandonam após 2 experiências ruins</p>
+                      <p class="body-text" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 14px; color: #333333; line-height: 1.6; margin: 0;">Consumidores deixam marcas que confiavam após apenas duas ou três interações negativas de atendimento. Não precisa de muita coisa.</p>
+                    </div>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td style="padding: 12px 0;">
+                    <div class="section-card" style="background-color: #f8f9fa; border-left: 4px solid #137dc5; border-radius: 0 6px 6px 0; padding: 16px 20px;">
+                      <p style="font-family: 'Alata', Arial, Helvetica, sans-serif; font-size: 16px; color: #2d2d8f; margin: 0 0 6px 0;">56% saem sem dizer nada</p>
+                      <p class="body-text" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 14px; color: #333333; line-height: 1.6; margin: 0;">Mais da metade dos clientes insatisfeitos simplesmente desaparecem — sem reclamar, sem dar feedback. Você nem sabe que perdeu.</p>
+                    </div>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td style="padding: 12px 0;">
+                    <div class="section-card" style="background-color: #f8f9fa; border-left: 4px solid #00aeef; border-radius: 0 6px 6px 0; padding: 16px 20px;">
+                      <p style="font-family: 'Alata', Arial, Helvetica, sans-serif; font-size: 16px; color: #2d2d8f; margin: 0 0 6px 0;">US$ 3,7 trilhões perdidos por ano</p>
+                      <p class="body-text" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 14px; color: #333333; line-height: 1.6; margin: 0;">Esse é o custo global do mau atendimento. Empresas perdem receita por algo que poderia ser resolvido com velocidade e disponibilidade.</p>
+                    </div>
+                  </td>
+                </tr>
+                
+              </table>
+              
+              
+            </td>
+          </tr>
+
+          
+
+          
+
+          
+          <!-- Stats Block -->
+          <tr>
+            <td style="padding: 28px 40px 0 40px;">
+              <h2 class="section-heading" style="font-family: 'Alata', Arial, Helvetica, sans-serif; font-size: 22px; font-weight: 400; color: #2d2d8f; line-height: 1.3; margin: 0 0 20px 0;">O que acontece quando um Agente de IA assume o atendimento</h2>
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="stats-table">
+                <tr>
+                  
+                  <td align="center" valign="top" style="width: 50%; padding: 0 8px;">
+                    <div class="highlight-box" style="background-color: #f0f7ff; border-radius: 8px; padding: 24px 16px;">
+                      <p class="stat-value" style="font-family: 'Alata', Arial, Helvetica, sans-serif; font-size: 36px; color: #137dc5; line-height: 1.1; margin: 0 0 8px 0;"><3s</p>
+                      <p class="stat-label" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 14px; color: #333333; line-height: 1.4; margin: 0 0 8px 0;">tempo médio de resposta de um agente de IA vs. 6,8 horas de um humano</p>
+                      <p class="stat-source" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 11px; color: #999999; font-style: italic; margin: 0;">Freshworks, 2025</p>
+                    </div>
+                  </td>
+                  
+                  <td align="center" valign="top" style="width: 50%; padding: 0 8px;">
+                    <div class="highlight-box" style="background-color: #f0f7ff; border-radius: 8px; padding: 24px 16px;">
+                      <p class="stat-value" style="font-family: 'Alata', Arial, Helvetica, sans-serif; font-size: 36px; color: #137dc5; line-height: 1.1; margin: 0 0 8px 0;">87%</p>
+                      <p class="stat-label" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 14px; color: #333333; line-height: 1.4; margin: 0 0 8px 0;">de redução no tempo de resolução em empresas que adotaram IA no atendimento</p>
+                      <p class="stat-source" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 11px; color: #999999; font-style: italic; margin: 0;">Freshworks / Lyft Case Study</p>
+                    </div>
+                  </td>
+                  
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          
+
+          
+
+          
+          <!-- Case / Practical Example -->
+          <tr>
+            <td style="padding: 28px 40px 0 40px;">
+              <h2 class="section-heading" style="font-family: 'Alata', Arial, Helvetica, sans-serif; font-size: 22px; font-weight: 400; color: #2d2d8f; line-height: 1.3; margin: 0 0 16px 0;">Na prática: o que um Agente de Atendimento faz em 5 minutos</h2>
+              <p class="body-text" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 15px; color: #333333; line-height: 1.7; margin: 0 0 16px 0;">Imagine que um lead entra no seu WhatsApp às 23h com uma dúvida sobre seu serviço. Sem agente, ele espera até amanhã. Com um Agente de IA:</p>
+              
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                
+                <tr>
+                  <td style="padding: 8px 0;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td width="36" valign="top" style="padding-right: 12px;">
+                          <div style="background: linear-gradient(135deg, #2d2d8f 0%, #00aeef 100%); border-radius: 50%; width: 32px; height: 32px; text-align: center; line-height: 32px; font-family: 'Alata', Arial, sans-serif; font-size: 14px; color: #ffffff;">1</div>
+                        </td>
+                        <td valign="middle">
+                          <p class="body-text" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 14px; color: #333333; line-height: 1.6; margin: 0;">O cliente manda uma mensagem e recebe resposta em menos de 3 segundos — a qualquer hora, qualquer dia</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td style="padding: 8px 0;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td width="36" valign="top" style="padding-right: 12px;">
+                          <div style="background: linear-gradient(135deg, #2d2d8f 0%, #00aeef 100%); border-radius: 50%; width: 32px; height: 32px; text-align: center; line-height: 32px; font-family: 'Alata', Arial, sans-serif; font-size: 14px; color: #ffffff;">2</div>
+                        </td>
+                        <td valign="middle">
+                          <p class="body-text" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 14px; color: #333333; line-height: 1.6; margin: 0;">O agente entende o contexto da pergunta e responde com informações precisas sobre o produto ou serviço</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td style="padding: 8px 0;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td width="36" valign="top" style="padding-right: 12px;">
+                          <div style="background: linear-gradient(135deg, #2d2d8f 0%, #00aeef 100%); border-radius: 50%; width: 32px; height: 32px; text-align: center; line-height: 32px; font-family: 'Alata', Arial, sans-serif; font-size: 14px; color: #ffffff;">3</div>
+                        </td>
+                        <td valign="middle">
+                          <p class="body-text" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 14px; color: #333333; line-height: 1.6; margin: 0;">Se o cliente quer comprar, o agente direciona para o checkout ou agenda uma demonstração</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td style="padding: 8px 0;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td width="36" valign="top" style="padding-right: 12px;">
+                          <div style="background: linear-gradient(135deg, #2d2d8f 0%, #00aeef 100%); border-radius: 50%; width: 32px; height: 32px; text-align: center; line-height: 32px; font-family: 'Alata', Arial, sans-serif; font-size: 14px; color: #ffffff;">4</div>
+                        </td>
+                        <td valign="middle">
+                          <p class="body-text" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 14px; color: #333333; line-height: 1.6; margin: 0;">Se a dúvida é complexa, o agente qualifica o caso e escala para um humano — com todo o contexto já organizado</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td style="padding: 8px 0;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td width="36" valign="top" style="padding-right: 12px;">
+                          <div style="background: linear-gradient(135deg, #2d2d8f 0%, #00aeef 100%); border-radius: 50%; width: 32px; height: 32px; text-align: center; line-height: 32px; font-family: 'Alata', Arial, sans-serif; font-size: 14px; color: #ffffff;">5</div>
+                        </td>
+                        <td valign="middle">
+                          <p class="body-text" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 14px; color: #333333; line-height: 1.6; margin: 0;">Na manhã seguinte, seu time encontra: lead qualificado, histórico completo, próximo passo claro</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                
+              </table>
+              
+              
+            </td>
+          </tr>
+
+          
+
+          
+
+          
+          <!-- Myth Buster / Desmistificacao -->
+          <tr>
+            <td style="padding: 28px 40px 0 40px;">
+              <div class="section-card" style="background-color: #f8f9fa; border-left: 4px solid #00aeef; border-radius: 0 6px 6px 0; padding: 24px;">
+                <h2 class="section-heading" style="font-family: 'Alata', Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 400; color: #2d2d8f; line-height: 1.3; margin: 0 0 12px 0;">“Isso vai substituir meu time?”</h2>
+                <p class="body-text" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 15px; color: #333333; line-height: 1.7; margin: 0;">Não. E essa é a parte mais importante de entender.<br><br>Um agente de IA não substitui pessoas — ele <strong>liberta</strong> pessoas. Liberta do trabalho repetitivo de responder as mesmas perguntas 50 vezes por dia, de qualificar leads frios, de preencher planilhas.<br><br>O resultado? Seu time passa a focar no que só humanos fazem bem: <strong>negociar, criar relacionamento e fechar</strong>. O agente cuida do resto — 24 horas por dia, 7 dias por semana, com paciência infinita e zero tempo de espera.</p>
+              </div>
+            </td>
+          </tr>
+
+          
+
+          
+
+          
+          <!-- CTA Block -->
+          <tr>
+            <td style="padding: 28px 40px 0 40px;">
+              <hr class="divider" style="border: none; border-top: 1px solid #e0e0e0; margin: 0 0 28px 0;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td align="center">
+                    <h2 class="section-heading" style="font-family: 'Alata', Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 400; color: #2d2d8f; line-height: 1.3; margin: 0 0 12px 0; text-align: center;">Quer ver como funciona na prática?</h2>
+                    <p class="body-text" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 15px; color: #333333; line-height: 1.7; margin: 0 0 24px 0; text-align: center;">Gravei uma aula completa mostrando como montar um Agente de IA de Atendimento do zero — sem programação, usando ferramentas no-code. Do conceito ao agente funcionando no WhatsApp.</p>
+                    
+                    <a href="https://movidos.com.br/conteudo/guia-gratuito" class="cta-button" style="background: linear-gradient(135deg, #2d2d8f 0%, #137dc5 55%, #00aeef 100%); border-radius: 6px; color: #ffffff; display: inline-block; font-family: 'Alata', Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 1; padding: 14px 32px; text-align: center; text-decoration: none;">Assistir a aula gratuita</a>
+                    
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+
+          
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 36px 40px;">
+              <hr class="divider" style="border: none; border-top: 1px solid #e0e0e0; margin: 0 0 24px 0;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td align="center">
+                    <p class="footer-text" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 12px; color: #999999; line-height: 1.5; margin: 0 0 8px 0;">
+                      Movidos Por IA &mdash; IA aplicada a vendas e marketing
+                    </p>
+                    <p class="footer-text" style="font-family: 'Roboto Slab', Georgia, serif; font-size: 12px; color: #999999; line-height: 1.5; margin: 0 0 8px 0;">
+                      Voc&ecirc; recebeu este email porque se inscreveu na nossa newsletter.
+                    </p>
+                    
+                    <p style="margin: 0;">
+                      <a href="#unsubscribe" style="color: #999999; font-family: 'Roboto Slab', Georgia, serif; font-size: 11px; text-decoration: underline;">Cancelar inscri&ccedil;&atilde;o</a>
+                    </p>
+                    
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+        <!-- /Email Container -->
+
+      </td>
+    </tr>
+  </table>
+  <!-- /Email Wrapper -->
+</body>
+</html>

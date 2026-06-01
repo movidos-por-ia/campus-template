@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --background: oklch(0.980 0.003 242);
+  --foreground: oklch(0.115 0.028 265);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.115 0.028 265);
+  --border: oklch(0.880 0.006 242);
+  --input: oklch(0.855 0.008 242);
+  --ring: oklch(0.530 0.178 242.5);
+  --radius: 0.5rem;
+  --gradient-brand: linear-gradient(135deg, #2a2a2a 0%, #ffffff 100%);
+  --gradient-brand-horizontal: linear-gradient(90deg, #2a2a2a 0%, #8a8a8a 50%, #ffffff 100%);
+}
+
+.dark {
+  --background: oklch(0.110 0.028 265);
+  --foreground: oklch(0.955 0.004 242);
+  --card: oklch(0.158 0.030 265);
+  --card-foreground: oklch(0.955 0.004 242);
+  --border: oklch(0.240 0.032 265);
+  --input: oklch(0.240 0.032 265);
+  --ring: oklch(0.678 0.175 219.8);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), "Montserrat", system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-alata), "Alata", sans-serif;
+}
