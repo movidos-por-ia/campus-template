@@ -159,7 +159,7 @@ Pronto. O layout do campus já protege com auth — só usuários logados acessa
 - `muted` / `dim` — tons de texto secundário
 
 ### Logo
-Substitua `public/brand/logo-template.png` pela sua. Os tamanhos usados são 160×40 (optin) e 192×48 (login).
+Substitua `public/brand/logo-dark.png` pela sua. Os tamanhos usados são 160×40 (optin) e 192×48 (login).
 
 ### Fontes
 [app/layout.tsx](app/layout.tsx) importa Alata e Roboto Slab. Troque pelos seus.

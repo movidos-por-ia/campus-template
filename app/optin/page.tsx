@@ -144,7 +144,7 @@ export default function OptinPage() {
 
       <div className="relative z-10 w-full max-w-md">
         <div className="flex justify-center mb-8">
-          <Image src="/brand/logo-template.png" alt="Movidos Por IA" width={160} height={40} className="object-contain" />
+          <Image src="/brand/logo-dark.png" alt="Movidos Por IA" width={160} height={40} className="object-contain" />
         </div>
 
         <div className="rounded-2xl p-8" style={{ background: C.card, border: `1px solid ${C.border}`, boxShadow: "0 20px 80px rgba(255,255,255,0.2)" }}>

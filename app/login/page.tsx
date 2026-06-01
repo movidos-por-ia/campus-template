@@ -77,7 +77,7 @@ export default function LoginPage() {
 
       <div className="relative z-10 w-full max-w-md">
         <div className="flex justify-center mb-1">
-          <Image src="/brand/logo-template.png" alt="Movidos Por IA" width={192} height={48} className="object-contain" />
+          <Image src="/brand/logo-dark.png" alt="Movidos Por IA" width={192} height={48} className="object-contain" />
         </div>
 
         <div className="rounded-2xl p-8" style={{
